@@ -85,7 +85,6 @@ defmodule Acme.BankOfHours do
         workload_time,
         minimum_rest_interval
       ) do
-    # + minimum_rest_interval
     rest_interval = calc_rest_interval(entries)
 
     if worked_time >= workload_time * 0.5 do
